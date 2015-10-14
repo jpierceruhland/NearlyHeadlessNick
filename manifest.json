@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Nearly Headless Nick",
+  "description": "A ghost that floats the current filename from a Phabricator review to the top of the page.",
+  "version": "0.1",
+
+  "options_page": "options.html",
+
+//  I'll get these in here eventually... they are NxN square icons
+//  "icons": {
+//    "16": "img/icon-16.png",
+//    "48": "img/icon-48.png",
+//    "128": "img/icon-128.png"
+//  },
+
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://dci-phabricator.garmin.com/*"
+      ],
+      "js" : ["js/contentscript.js"],
+      "css" : ["css/custom.css"],
+      "run_at" : "document_idle",
+      "all_frames" : false
+    }
+  ],
+
+  "permissions": [
+    "storage",
+    "tabs"
+  ]
+}

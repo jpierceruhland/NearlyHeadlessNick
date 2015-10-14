@@ -1,0 +1,19 @@
+body{position:relative;z-index:1;}
+.headless-container { 
+  width:100%; 
+  position:fixed;
+  top:0px;
+  z-index:10; 
+  opacity:.99;
+}
+.headless {
+  height: 20px;
+  background:#F0F0F0;
+  border:1px solid #CCC;
+  width:960px;
+  margin:0px auto;
+  z-index:100; 
+  opacity:.99;
+  position:relative;
+}
+
