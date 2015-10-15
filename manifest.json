@@ -6,12 +6,11 @@
 
   "options_page": "options.html",
 
-//  I'll get these in here eventually... they are NxN square icons
-//  "icons": {
-//    "16": "img/icon-16.png",
-//    "48": "img/icon-48.png",
-//    "128": "img/icon-128.png"
-//  },
+  "icons": {
+    "16": "img/icon-16.png",
+    "48": "img/icon-48.png",
+    "128": "img/icon-128.png"
+  },
 
   "content_scripts" : [
     {
