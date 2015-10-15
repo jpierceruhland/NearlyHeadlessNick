@@ -34,7 +34,6 @@ function scrolled() {
 }
 
 function refreshText() {
-  console.log("Refreshing.");
   var candidate;
   var junk;
   var i = 0;
@@ -70,9 +69,9 @@ function elementAboveViewport(el) {
 chrome.storage.local.get({
     url: 'http://your-url-here',
   }, function(items) {
-    console.log("Got a url of " + items.url);
     if (document.location.origin.match(items.url)) {
       setup();
+      refreshText();
       window.onscroll = scrolled;
     }
 });
