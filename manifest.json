@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Nearly Headless Nick",
   "description": "A ghost that floats the current filename from a Phabricator review to the top of the page.",
-  "version": "0.1",
+  "version": "0.2",
 
   "options_page": "options.html",
 
@@ -10,6 +10,11 @@
     "16": "img/icon-16.png",
     "48": "img/icon-48.png",
     "128": "img/icon-128.png"
+  },
+
+  "background": {
+    "persistent": false,
+    "scripts": ["js/background.js"]
   },
 
   "content_scripts" : [
